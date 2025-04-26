@@ -148,12 +148,12 @@ const NewArrivals = () => {
       setCanScrollRight(rightScrollable);
     }
 
-    console.log({
-      scrollLeft: container.scrollLeft, // kitna pixel scroll ho gya hai container ka
-      clientWidth: container.clientWidth, // portion of container visible to user
-      containerScrollWidth: container.scrollWidth, // total width of the scrollable content inside container
-      offsetLeft: scrollRef.current.offsetLeft,
-    });
+    // console.log({
+    //   scrollLeft: container.scrollLeft, // kitna pixel scroll ho gya hai container ka
+    //   clientWidth: container.clientWidth, // portion of container visible to user
+    //   containerScrollWidth: container.scrollWidth, // total width of the scrollable content inside container
+    //   offsetLeft: scrollRef.current.offsetLeft,
+    // });
   };
 
   useEffect(() => {
