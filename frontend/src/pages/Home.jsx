@@ -3,6 +3,97 @@ import Hero from '../components/Layout/Hero'
 import GenderCollectionSection from '../components/Products/GenderCollectionSection'
 import NewArrivals from '../components/Products/NewArrivals'
 import ProductDetails from '../components/Products/ProductDetails'
+import ProductGrid from '../components/Products/ProductGrid'
+
+const placeholderProducts = [
+  {
+    _id: "1",
+    name: "Trouser 1",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=9"
+      },
+    ],
+  }, 
+
+  {
+    _id: "2",
+    name: "Trouser 2",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=7"
+      },
+    ],
+  }, 
+
+  {
+    _id: "3",
+    name: "Trouser 3",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=6"
+      },
+    ],
+  },
+
+  {
+    _id: "4",
+    name: "Trouser 4",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=3"
+      },
+    ],
+  },
+
+  {
+    _id: "5",
+    name: "Trouser 5",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=5"
+      },
+    ],
+  }, 
+
+  {
+    _id: "6",
+    name: "Trouser 6",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=1"
+      },
+    ],
+  }, 
+
+  {
+    _id: "7",
+    name: "Trouser 7",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=2"
+      },
+    ],
+  },
+
+  {
+    _id: "8",
+    name: "Trouser 8",
+    price: 1500,
+    images: [
+      {
+        url: "https://picsum.photos/500/500?random=0"
+      },
+    ],
+  }
+]
 
 const Home = () => {
   return (
@@ -14,6 +105,14 @@ const Home = () => {
         {/* Best Seller Section */}
         <h2 className='text-3xl font-bold text-center mb-4'>Best Sellers</h2>
         <ProductDetails />
+
+        <div className="container mx-auto">
+          <h2 className="text-3xl text-center font-bold mb-4">
+            Top Wears for Women
+          </h2>
+
+          <ProductGrid products={placeholderProducts} />
+        </div>
 
     </div>
   )
