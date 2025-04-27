@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF5722;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E53935;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main B shape -->
+  <path d="M50,30 C50,22 56,15 66,15 C81,15 88,25 88,35 C88,43 81,48 73,48 C85,48 95,53 95,65 C95,80 83,85 66,85 C56,85 50,78 50,70 L50,30 Z" fill="url(#logoGradient)" />
+  
+  <!-- Inner details of B -->
+  <path d="M62,30 L62,42 L67,42 C72,42 75,39 75,36 C75,32 72,30 67,30 L62,30 Z" fill="#FFFFFF" />
+  <path d="M62,55 L62,70 L67,70 C74,70 77,66 77,62 C77,58 74,55 67,55 L62,55 Z" fill="#FFFFFF" />
+  
+  <!-- Bloom element -->
+  <circle cx="88" cy="28" r="10" fill="#FF7043" opacity="0.2" />
+  <circle cx="93" cy="33" r="10" fill="#FF7043" opacity="0.2" />
+  <circle cx="83" cy="33" r="10" fill="#FF7043" opacity="0.2" />
+  
+  <!-- Text -->
+  <text x="110" y="60" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="44" fill="#333333">loomBay</text>
+</svg>

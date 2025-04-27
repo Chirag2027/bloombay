@@ -5,6 +5,7 @@ import { HiOutlineUser, HiOutlineShoppingBag, HiBars3BottomRight } from 'react-i
 import Searchbar from './Searchbar'
 import CartDrawer from '../Layout/CartDrawer'
 import { IoMdClose } from 'react-icons/io'
+import Logo from '../../assets/logo.svg';
 
 const Navbar = () => {
 
@@ -25,7 +26,7 @@ const Navbar = () => {
             {/* Left - Logo */}
             <div>
                 <Link to="/" className='text-2xl font-medium'>
-                    BloomBay
+                <img src={Logo} alt="BloomBay" className="h-10 w-auto" />
                 </Link>
             </div>
 
