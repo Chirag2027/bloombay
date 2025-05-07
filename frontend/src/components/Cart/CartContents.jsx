@@ -53,18 +53,18 @@ const CartContents = () => {
                     </div>
 
                     {/* To display price */}
-                    <div>
-                        <p>${product.price.toLocaleString()}</p>
-                        <button>
-                           <RiDeleteBin3Line className='h-6 w-6 mt-2 text-red-600' />
+                    <div className="flex flex-col items-end justify-between h-full">
+                        <p className="text-lg font-semibold">${product.price.toLocaleString()}</p>
+                        <button 
+                            className="mt-2 p-1 rounded hover:bg-red-100 transition-colors cursor-pointer"
+                            aria-label="Remove item"
+                        >
+                            <RiDeleteBin3Line className="h-6 w-6 text-red-600" />
                         </button>
-                    </div>
+                    </div>  
                 </div>
-
-
             ))
         }
-      
     </div>
   )
 }
